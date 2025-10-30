@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('img/arka-plan..webp'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+.header {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: red;
+}
+
+.menu a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.reklam-sol, .reklam-sag {
+    width: 160px;
+    height: 600px;
+    background: red;
+    color: white;
+    position: fixed;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.reklam-sol {
+    left: 0;
+}
+
+.reklam-sag {
+    right: 0;
+}
+
+.container, .icerik {
+    flex: 1;
+    width: 900px;
+    margin: auto;
+}
+
+.haber {
+    background: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.haber img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: red;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+.haberler {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.haber {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+body.futbol-sayfa .haberler {
+    display: block;
+}
+
+body.futbol-sayfa .haber {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.icerik {
+    width: 60%;
+    margin: 0 auto; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+.icerik, main {
+    margin-left: 260px;  
+    margin-right: 260px; 
+}
+.spor-baslik {
+    text-align: center;
+    color: #ff0000;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+.manset {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    text-align: left;
+    transition: .3s;
+}
+
+.manset:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.manset img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.manset h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.manset p {
+    color: #333;
+    margin-bottom: 12px;
+}
+.form-container {
+    width: 350px;
+    margin: 120px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #d50000;
+}
+
+.form-container input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 95%;
+    padding: 10px;
+    background: #d50000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form-container button:hover {
+    background: #000;
+}
+
+.form-container p {
+    margin-top: 10px;
+}
+
+.form-container a {
+    color: #d50000;
+    text-decoration: none;
+}
+
+.bilgi {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.basarili {
+    background: #e7f8ec;
+    color: #16794e;
+}
+
+.hata {
+    background: #fdeaea;
+    color: #b71c1c;
+}
+.header {
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: red;
+}
+
+.menu a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.user-links a {
+    color: #ff4c4c;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.user-links a:hover {
+    text-decoration: underline;
+    color: white;
+}
+/* === GENEL ORTALAMA DÜZENİ === */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
